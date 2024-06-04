@@ -1,0 +1,104 @@
+header {
+    height: 750px;
+    background-image: url("bg.jpg");
+    background-size: 100% 100% ;
+    text-align: center;
+
+}
+
+
+.box {
+    max-width: 400px;
+    margin: 0 auto;
+    height: 750px;
+    overflow: auto;
+    display: none;
+}
+.boxs {
+    max-width: 400px;
+    margin: 0 auto;
+    height: 750px;
+    overflow: auto;
+    display: block;
+}
+
+
+.img{
+    width: 100%;
+}
+
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.image-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: slideDown 3s ease forwards;
+  z-index: 100;
+}
+
+.btns {
+  position: fixed;
+z-index: 150;
+top: 120%;
+
+
+}
+
+
+.logo {
+  width: 50px;
+}
+
+
+
+@media screen and (max-width:480px ) {
+ 
+    .box {
+        max-width: 400px;
+        margin: 0 auto;
+        height: 750px;
+        overflow: auto;
+        display: block;
+    }
+    
+    
+    
+    .img{
+        width: 100%;
+    }
+
+    .boxs {
+        max-width: 400px;
+        margin: 0 auto;
+        height: 750px;
+        overflow: auto;
+        display: none;
+    }
+
+    .btns {
+      position: fixed;
+    z-index: 150;
+    top: 600px;
+    left: 35%;
+    
+    }
+    
+
+}
+
+
+
+
+
